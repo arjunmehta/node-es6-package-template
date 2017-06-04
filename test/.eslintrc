@@ -1,0 +1,10 @@
+---
+  env:
+    mocha: true
+  plugins:
+    - chai-friendly
+  rules:
+    chai-friendly/no-unused-expressions: 2
+    no-underscore-dangle: 0
+    no-unused-expressions: 0
+    no-unused-vars: [2, { varsIgnorePattern: "TestRunner" }]

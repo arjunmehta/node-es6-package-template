@@ -1,0 +1,39 @@
+{
+  "name": "node-es6-package-template",
+  "version": "0.0.1",
+  "description": "",
+  "main": "build/index.js",
+  "readme": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/arjunmehta/node-es6-package-template.git"
+  },
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register",
+    "lint": "eslint ./ --ext .js --ext .jsx -f stylish",
+    "compile": "babel -d build src/",
+    "prepublish": "npm run compile"
+  },
+  "author": "Arjun Mehta",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "6.24.1",
+    "babel-core": "6.24.1",
+    "babel-eslint": "7.2.1",
+    "babel-plugin-rewire": "1.1.0",
+    "babel-plugin-transform-object-assign": "6.22.0",
+    "babel-preset-es2015": "6.24.1",
+    "babel-template": "6.24.1",
+    "babel-types": "6.24.1",
+    "chai": "3.5.0",
+    "eslint": "3.19.0",
+    "eslint-config-standard": "10.2.1",
+    "eslint-plugin-chai-friendly": "0.3.6",
+    "eslint-plugin-import": "2.3.0",
+    "eslint-plugin-node": "5.0.0",
+    "eslint-plugin-promise": "3.5.0",
+    "eslint-plugin-standard": "3.0.1",
+    "mocha": "3.2.0",
+    "sinon": "2.3.1"
+  }
+}
