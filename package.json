@@ -10,7 +10,7 @@
   },
   "scripts": {
     "test": "mocha --compilers js:babel-core/register",
-    "lint": "eslint ./ --ext .js --ext .jsx -f stylish",
+    "lint": "eslint ./ --ext .js -f stylish",
     "compile": "babel -d build src/",
     "prepublish": "npm run compile"
   },
